@@ -76,10 +76,17 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header class="site-header">
+    <!-- Skip Links for Accessibility -->
+    <div class="skip-links">
+      <a href="#main-content" class="skip-link">Skip to main content</a>
+      <a href="#nav-menu" class="skip-link">Skip to navigation</a>
+      <a href="#organizers" class="skip-link">Skip to organizers</a>
+    </div>
+
+    <header class="site-header" role="banner">
       <div class="container header-inner">
         <a href="#home" class="brand">ISCOL 2025</a>
-        <nav class="nav" aria-label="Primary">
+        <nav class="nav" aria-label="Primary navigation" role="navigation">
           <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
           <ul id="nav-menu" class="nav-list">
             <li><a href="#home">Home</a></li>
@@ -93,7 +100,7 @@
       </div>
     </header>
 
-    <main>
+    <main id="main-content" role="main">
       <section id="home" class="section hero">
         <div class="container hero-grid">
           <div class="hero-content">
@@ -261,7 +268,7 @@
       </section>
     </main>
 
-    <footer class="site-footer">
+    <footer class="site-footer" role="contentinfo">
       <div class="container footer-inner">
         <div>
           <strong>ISCOL 2025</strong>
@@ -278,7 +285,13 @@
       </div>
     </footer>
 
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      ↑
+    </button>
+
     <script>
+      // Mobile navigation toggle
       const toggle = document.querySelector('.nav-toggle');
       const menu = document.getElementById('nav-menu');
       if (toggle && menu) {
@@ -287,7 +300,122 @@
           toggle.setAttribute('aria-expanded', String(!expanded));
           menu.classList.toggle('open');
         });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+          if (!toggle.contains(e.target) && !menu.contains(e.target)) {
+            toggle.setAttribute('aria-expanded', 'false');
+            menu.classList.remove('open');
+          }
+        });
+
+        // Close menu when pressing Escape
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape' && menu.classList.contains('open')) {
+            toggle.setAttribute('aria-expanded', 'false');
+            menu.classList.remove('open');
+            toggle.focus();
+          }
+        });
       }
+
+      // Back to top button functionality
+      const backToTopButton = document.getElementById('backToTop');
+      
+      function toggleBackToTopButton() {
+        if (window.scrollY > 300) {
+          backToTopButton.classList.add('visible');
+        } else {
+          backToTopButton.classList.remove('visible');
+        }
+      }
+
+      // Show/hide back to top button on scroll
+      window.addEventListener('scroll', toggleBackToTopButton);
+
+      // Smooth scroll to top when button is clicked
+      backToTopButton.addEventListener('click', () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href');
+          const targetElement = document.querySelector(targetId);
+          
+          if (targetElement) {
+            // Close mobile menu if open
+            if (menu && menu.classList.contains('open')) {
+              toggle.setAttribute('aria-expanded', 'false');
+              menu.classList.remove('open');
+            }
+            
+            // Scroll to target with offset for sticky header
+            const headerHeight = document.querySelector('.site-header').offsetHeight;
+            const elementPosition = targetElement.offsetTop - headerHeight - 20;
+            
+            window.scrollTo({
+              top: elementPosition,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+
+      // Add loading animation to elements as they come into view
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.animationDelay = '0.1s';
+            entry.target.style.animation = 'fadeInUp 0.6s ease forwards';
+          }
+        });
+      }, observerOptions);
+
+      // Observe committee members for staggered animation
+      document.querySelectorAll('.committee-member').forEach((member, index) => {
+        member.style.opacity = '0';
+        member.style.animationDelay = `${index * 0.1}s`;
+        observer.observe(member);
+      });
+
+      // Add focus management for better accessibility
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Tab') {
+          // Remove any existing focus indicators
+          document.querySelectorAll('.focus-visible').forEach(el => {
+            el.classList.remove('focus-visible');
+          });
+        }
+      });
+
+      // Initialize back to top button visibility
+      toggleBackToTopButton();
+
+
+      // Preload critical resources
+      const preloadLinks = [
+        { href: './styles.css', as: 'style' },
+        { href: './assets/biu-logo.png', as: 'image' }
+      ];
+
+      preloadLinks.forEach(link => {
+        const linkElement = document.createElement('link');
+        linkElement.rel = 'preload';
+        linkElement.href = link.href;
+        linkElement.as = link.as;
+        document.head.appendChild(linkElement);
+      });
     </script>
   </body>
   </html>
