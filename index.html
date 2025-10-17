@@ -8,6 +8,68 @@
       name="description"
       content="ISCOL 2025 — The Israel Seminar on Computational Linguistics. Bar-Ilan University. Program and details TBD."
     />
+    
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="ISCOL, computational linguistics, NLP, natural language processing, Israel, Bar-Ilan University, conference, seminar, AI, machine learning, linguistics research" />
+    <meta name="author" content="ISCOL 2025 Organizing Committee" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://iscol-meeting.github.io/iscol2025/" />
+    
+    <!-- Open Graph Meta Tags (Facebook, LinkedIn) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ISCOL 2025 — The Israel Seminar on Computational Linguistics" />
+    <meta property="og:description" content="Join ISCOL 2025 at Bar-Ilan University for exchanging ideas in Computational Linguistics and NLP across academia and industry in Israel." />
+    <meta property="og:url" content="https://iscol-meeting.github.io/iscol2025/" />
+    <meta property="og:site_name" content="ISCOL 2025" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="https://iscol-meeting.github.io/iscol2025/assets/biu-logo.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="ISCOL 2025 - Bar-Ilan University" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@iscol_meeting" />
+    <meta name="twitter:title" content="ISCOL 2025 — The Israel Seminar on Computational Linguistics" />
+    <meta name="twitter:description" content="Join ISCOL 2025 at Bar-Ilan University for exchanging ideas in Computational Linguistics and NLP across academia and industry in Israel." />
+    <meta name="twitter:image" content="https://iscol-meeting.github.io/iscol2025/assets/biu-logo.png" />
+    <meta name="twitter:image:alt" content="ISCOL 2025 - Bar-Ilan University" />
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "name": "ISCOL 2025 — The Israel Seminar on Computational Linguistics",
+      "description": "The Israel Seminar on Computational Linguistics is a venue for exchanging ideas in Computational Linguistics and NLP across academia and industry in Israel.",
+      "startDate": "2025-TBD",
+      "endDate": "2025-TBD",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "Place",
+        "name": "Bar-Ilan University",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "Israel",
+          "addressLocality": "Ramat Gan"
+        }
+      },
+      "organizer": {
+        "@type": "Organization",
+        "name": "ISCOL 2025 Organizing Committee",
+        "email": "iscol.pc@gmail.com",
+        "sameAs": "https://x.com/iscol_meeting"
+      },
+      "url": "https://iscol-meeting.github.io/iscol2025/",
+      "image": "https://iscol-meeting.github.io/iscol2025/assets/biu-logo.png"
+    }
+    </script>
+    
+    <!-- Favicon and Icons -->
+    <link rel="icon" type="image/png" href="./assets/biu-logo.png" />
+    
+    <!-- Preload critical resources -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
@@ -115,38 +177,38 @@
         </div>
       </section> -->
 
-      <section id="organizers" class="section">
+      <section id="organizers" class="section" itemscope itemtype="https://schema.org/Organization">
         <div class="container">
           <h2>Organizing Committee</h2>
           <p>ISCOL 2025 organizing committee members:</p>
-          <div class="committee-grid">
-            <div class="committee-member">
-              <div class="member-name"><a href="https://yanaiela.github.io/" target="_blank" rel="noopener noreferrer">Yanai Elazar</a></div>
-              <div class="member-affiliation">Bar-Ilan University</div>
+          <div class="committee-grid" itemprop="member">
+            <div class="committee-member" itemscope itemtype="https://schema.org/Person">
+              <div class="member-name"><a href="https://yanaiela.github.io/" target="_blank" rel="noopener noreferrer" itemprop="url"><span itemprop="name">Yanai Elazar</span></a></div>
+              <div class="member-affiliation" itemprop="affiliation">Bar-Ilan University</div>
             </div>
-            <div class="committee-member">
-              <div class="member-name"><a href="https://aviclu.github.io/" target="_blank" rel="noopener noreferrer">Avi Caciularu</a></div>
-              <div class="member-affiliation">Google Research</div>
+            <div class="committee-member" itemscope itemtype="https://schema.org/Person">
+              <div class="member-name"><a href="https://aviclu.github.io/" target="_blank" rel="noopener noreferrer" itemprop="url"><span itemprop="name">Avi Caciularu</span></a></div>
+              <div class="member-affiliation" itemprop="affiliation">Google Research</div>
             </div>
-            <div class="committee-member">
-              <div class="member-name"><a href="https://www.cs.biu.ac.il/~dagan/" target="_blank" rel="noopener noreferrer">Ido Dagan</a></div>
-              <div class="member-affiliation">Bar-Ilan University</div>
+            <div class="committee-member" itemscope itemtype="https://schema.org/Person">
+              <div class="member-name"><a href="https://www.cs.biu.ac.il/~dagan/" target="_blank" rel="noopener noreferrer" itemprop="url"><span itemprop="name">Ido Dagan</span></a></div>
+              <div class="member-affiliation" itemprop="affiliation">Bar-Ilan University</div>
             </div>
-            <div class="committee-member">
-              <div class="member-name"><a href="https://royi-rassin.netlify.app/" target="_blank" rel="noopener noreferrer">Royi Rassin</a></div>
-              <div class="member-affiliation">Bar-Ilan University</div>
+            <div class="committee-member" itemscope itemtype="https://schema.org/Person">
+              <div class="member-name"><a href="https://royi-rassin.netlify.app/" target="_blank" rel="noopener noreferrer" itemprop="url"><span itemprop="name">Royi Rassin</span></a></div>
+              <div class="member-affiliation" itemprop="affiliation">Bar-Ilan University</div>
             </div>
-            <div class="committee-member">
-              <div class="member-name"><a href="https://eranhirs.github.io/" target="_blank" rel="noopener noreferrer">Eran Hirsch</a></div>
-              <div class="member-affiliation">Bar-Ilan University</div>
+            <div class="committee-member" itemscope itemtype="https://schema.org/Person">
+              <div class="member-name"><a href="https://eranhirs.github.io/" target="_blank" rel="noopener noreferrer" itemprop="url"><span itemprop="name">Eran Hirsch</span></a></div>
+              <div class="member-affiliation" itemprop="affiliation">Bar-Ilan University</div>
             </div>
-            <div class="committee-member">
-              <div class="member-name"><a href="https://scholar.google.com/citations?user=f9erYBUAAAAJ" target="_blank" rel="noopener noreferrer">Aviya Maimon</a></div>
-              <div class="member-affiliation">Bar-Ilan University</div>
+            <div class="committee-member" itemscope itemtype="https://schema.org/Person">
+              <div class="member-name"><a href="https://scholar.google.com/citations?user=f9erYBUAAAAJ" target="_blank" rel="noopener noreferrer" itemprop="url"><span itemprop="name">Aviya Maimon</span></a></div>
+              <div class="member-affiliation" itemprop="affiliation">Bar-Ilan University</div>
             </div>
-            <div class="committee-member">
-              <div class="member-name">Lea Kaiser</div>
-              <div class="member-affiliation">Bar-Ilan University</div>
+            <div class="committee-member" itemscope itemtype="https://schema.org/Person">
+              <div class="member-name"><span itemprop="name">Lea Kaiser</span></div>
+              <div class="member-affiliation" itemprop="affiliation">Bar-Ilan University</div>
             </div>
           </div>
           <p class="contact-note">
