@@ -4,7 +4,7 @@
   --card: #ffffff;
   --text: #111827;
   --muted: #6b7280;
-  --brand: #1f6feb;
+  --brand: #2563eb;
   --accent: #d97706;
   --border: rgba(0, 0, 0, 0.12);
 }
@@ -208,6 +208,15 @@ h2 { margin-top: 0; }
   margin-bottom: 4px;
 }
 
+.member-name a {
+  color: var(--brand);
+  text-decoration: none;
+}
+
+.member-name a:hover {
+  text-decoration: underline;
+}
+
 .member-affiliation {
   color: var(--muted);
   font-size: 14px;
@@ -258,7 +267,7 @@ details a:hover {
 }
 
 .footer-links { display: flex; gap: 16px; }
-.
+
 .footer-links a { color: var(--muted); text-decoration: none; }
 .footer-links a:hover { color: var(--text); }
 
