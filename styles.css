@@ -318,6 +318,68 @@ details a:hover {
   text-decoration: underline;
 }
 
+/* FAQ Details Styling */
+details {
+  margin-bottom: 16px;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--card);
+  transition: all 0.2s ease;
+}
+
+details:hover {
+  border-color: var(--brand);
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.1);
+}
+
+details summary {
+  font-weight: 600;
+  cursor: pointer;
+  padding: 4px 0;
+  color: var(--text);
+  transition: color 0.2s ease;
+  list-style: none;
+  position: relative;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary::before {
+  content: "▶";
+  display: inline-block;
+  margin-right: 8px;
+  transition: transform 0.2s ease;
+  color: var(--brand);
+}
+
+details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+details summary:hover {
+  color: var(--brand);
+}
+
+details p {
+  margin: 12px 0 0 0;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+  line-height: 1.6;
+}
+
+details ul {
+  margin: 12px 0 0 0;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+details ul li {
+  margin-bottom: 8px;
+}
+
 @media (max-width: 720px) {
   .talk { grid-template-columns: 1fr; }
 }
