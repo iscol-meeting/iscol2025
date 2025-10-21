@@ -169,7 +169,7 @@ main > section:nth-of-type(even) { background: #f5f7fa; }
 
 .hero-logo img {
   width: 100%;
-  max-width: 240px;
+  max-width: 380px;
   height: auto;
   filter: none;
 }
@@ -454,6 +454,23 @@ details ul li {
 
 .sponsor-note a:hover {
   text-decoration: underline;
+}
+
+/* Font Awesome icon styling */
+.fab.fa-x-twitter {
+  margin-right: 2px;
+  color: inherit;
+}
+
+.fab.fa-twitter {
+  margin-right: 2px;
+  color: inherit;
+}
+
+/* Ensure icons display inline with text */
+i.fab {
+  display: inline;
+  font-style: normal;
 }
 
 /* BIU Sponsor specific styling */
