@@ -483,6 +483,16 @@ i.fab {
   border-color: #ffffff;
 }
 
+/* Intel sponsor with blue background */
+.sponsor-item:nth-child(5) {
+  background: #1D68B5;
+}
+
+.sponsor-item:nth-child(5):hover {
+  background: #1D68B5;
+  border-color: #ffffff;
+}
+
 @media (max-width: 720px) {
   .talk { grid-template-columns: 1fr; }
 }
