@@ -473,24 +473,31 @@ i.fab {
   font-style: normal;
 }
 
-/* BIU Sponsor specific styling */
+/* Intel sponsor with blue background */
 .sponsor-item:nth-child(2) {
-  background: #0A4128;
+  background: #1D68B5;
 }
 
 .sponsor-item:nth-child(2):hover {
+  background: #1D68B5;
+  border-color: #ffffff;
+}
+
+/* BIU Sponsor specific styling */
+.sponsor-item:nth-child(4) {
+  max-width: 800px;
+  max-height: 500px;
+}
+
+.sponsor-item:nth-child(4):hover {
   background: #0A4128;
   border-color: #ffffff;
 }
 
-/* Intel sponsor with blue background */
-.sponsor-item:nth-child(5) {
-  background: #1D68B5;
-}
-
-.sponsor-item:nth-child(5):hover {
-  background: #1D68B5;
-  border-color: #ffffff;
+/* IBM logo size adjustment */
+.sponsor-item:nth-child(3) .sponsor-logo img {
+  max-width: 100px;
+  max-height: 100px;
 }
 
 @media (max-width: 720px) {
