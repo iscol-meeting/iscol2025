@@ -163,8 +163,10 @@ main > section:nth-of-type(even) { background: #f5f7fa; }
 
 .hero-logo {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 20px;
 }
 
 .hero-logo img {
@@ -172,6 +174,10 @@ main > section:nth-of-type(even) { background: #f5f7fa; }
   max-width: 380px;
   height: auto;
   filter: none;
+}
+
+.hero-logo img.iscol-logo {
+  max-width: 280px;
 }
 
 h1 {
