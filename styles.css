@@ -259,9 +259,41 @@ h2 { margin-top: 0; }
   border-left: 4px solid #10b981;
 }
 
+/* Ari Rappoport Memorial: dignified maroon-themed styling */
+.talk-memorial {
+  background: linear-gradient(135deg, #fff8f9 0%, #fff0f2 100%);
+  border-left: 4px solid #7f1d1d; /* maroon accent */
+}
+
+.talk-memorial .talk-title {
+  color: #7f1d1d;
+}
+
+.talk-memorial .talk-meta,
+.talk-memorial .talk-time {
+  color: var(--muted);
+}
+
 .talk-panel {
   background: linear-gradient(135deg, #fae8ff 0%, #fdf4ff 100%);
   border-left: 4px solid #a855f7;
+}
+
+/* Closing remarks styling: Hanukkah-themed blue with a gold accent */
+.talk-closing {
+  /* Gold background with subtle warmth; keep blue accent on the left */
+  background: linear-gradient(135deg, #fff8eb 0%, #fff3df 100%);
+  border-left: 4px solid #0b4ea6; /* Hanukkah blue accent */
+}
+
+.talk-closing .talk-title {
+  color: #08306b; /* deep Hanukkah blue for good contrast */
+}
+
+/* Restore meta/time to muted color for readability against gold */
+.talk-closing .talk-meta,
+.talk-closing .talk-time {
+  color: var(--muted);
 }
 
 .talk-time {
