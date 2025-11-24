@@ -1,19 +1,52 @@
-<!DOCTYPE html>
+#!/usr/bin/env python3
+"""
+Generate posters.html from posters.csv
+"""
+
+import csv
+from pathlib import Path
+
+def load_posters(csv_path):
+    """Load posters from CSV and group by session."""
+    posters_by_session = {1: [], 2: [], 3: []}
+    
+    with open(csv_path, 'r', encoding='utf-8') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            session_id = int(row['Poster Session ID'])
+            posters_by_session[session_id].append({
+                'title': row['title'],
+                'authors': row['Authors']
+            })
+    
+    return posters_by_session
+
+def generate_html(posters_by_session):
+    """Generate HTML for the posters page."""
+    
+    # Session times from the program
+    session_times = {
+        1: "10:15 - 11:15",
+        2: "13:45 - 14:45",
+        3: "16:40 - 17:40"
+    }
+    
+    html = '''<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Program — ISCOL 2025</title>
+    <title>Posters — ISCOL 2025</title>
     <meta
       name="description"
-      content="ISCOL 2025 Program Schedule. December 18th, 2025 at Bar-Ilan University."
+      content="ISCOL 2025 Accepted Posters. December 18th, 2025 at Bar-Ilan University."
     />
     
     <!-- SEO Meta Tags -->
-    <meta name="keywords" content="ISCOL, computational linguistics, NLP, natural language processing, Israel, Bar-Ilan University, conference, seminar, program, schedule" />
+    <meta name="keywords" content="ISCOL, computational linguistics, NLP, natural language processing, Israel, Bar-Ilan University, conference, seminar, posters" />
     <meta name="author" content="ISCOL 2025 Organizing Committee" />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://iscol-meeting.github.io/iscol2025/program.html" />
+    <link rel="canonical" href="https://iscol-meeting.github.io/iscol2025/posters.html" />
     
     <!-- Favicon and Icons -->
     <link rel="icon" type="image/png" href="./assets/iscol-fav.png" />
@@ -54,105 +87,50 @@
     </header>
 
     <main id="main-content" role="main">
-      <section id="program" class="section">
+      <section id="posters" class="section">
         <div class="container">
-          <h1>Program (tentative)</h1>
-          <p class="subtitle">December 18th, 2025 • Wohl Conventions Center, Bar-Ilan University</p>
-          
-          <div class="program-list">
-            <div class="talk talk-break">
-              <div class="talk-time">08:30 - 09:00</div>
-              <div class="talk-body">
-                <div class="talk-title">Registration & Coffee</div>
-              </div>
-            </div>
-            
-            <div class="talk">
-              <div class="talk-time">09:00 - 09:15</div>
-              <div class="talk-body">
-                <div class="talk-title">Opening Remarks</div>
-                <div class="talk-meta">Yanai Elazar (Bar-Ilan University) & Avi Caciularu (Google)</div>
-              </div>
-            </div>
-            
-            <div class="talk talk-keynote">
-              <div class="talk-time">09:15 - 10:15</div>
-              <div class="talk-body">
-                <div class="talk-title">Keynote Talk | Prof. Dan Roth (University of Pennsylvania, Oracle)</div>
-                <div class="talk-meta">Title: TBD | Chair: Ido Dagan</div>
-              </div>
-            </div>
-            
-            <div class="talk talk-poster">
-              <div class="talk-time">10:15 - 11:15</div>
-              <div class="talk-body">
-                <div class="talk-title">Posters Session 1 + Coffee</div>
-              </div>
-            </div>
-            
-            <div class="talk talk-oral">
-              <div class="talk-time">11:15 - 12:15</div>
-              <div class="talk-body">
-                <div class="talk-title">Oral Session A</div>
-                <div class="talk-meta">Chair: Yuval Pinter</div>
-              </div>
-            </div>
-            
-            <div class="talk talk-poster talk-memorial">
-              <div class="talk-time">12:15 - 12:45</div>
-              <div class="talk-body">
-                <div class="talk-title">A Memorial Session for Prof. Ari Rappoport</div>
-              </div>
-            </div>
-            
-            <div class="talk talk-break">
-              <div class="talk-time">12:45 - 13:45</div>
-              <div class="talk-body">
-                <div class="talk-title">Lunch 🍽️</div>
-              </div>
-            </div>
-            
-            <div class="talk talk-poster">
-              <div class="talk-time">13:45 - 14:45</div>
-              <div class="talk-body">
-                <div class="talk-title">Posters Session 2 + Coffee</div>
-              </div>
-            </div>
-            
-            <div class="talk talk-panel">
-              <div class="talk-time">14:45 - 15:30</div>
-              <div class="talk-body">
-                <div class="talk-title">Panel Discussion | The future of AI Tools in AI research and education</div>
-                <div class="talk-meta">Chair: Ella Rabinovich</div>
-                <div class="talk-meta">Panelists: Giora Alexandron, Yoav Goldberg, Gili Lior</div>
-              </div>
-            </div>
-            
-            <div class="talk talk-oral">
-              <div class="talk-time">15:30 - 16:30</div>
-              <div class="talk-body">
-                <div class="talk-title">Oral Session B</div>
-                <div class="talk-meta">Chair: Roy Schwartz</div>
-              </div>
-            </div>
-            
-            <div class="talk talk-closing">
-              <div class="talk-time">16:30 - 16:40</div>
-              <div class="talk-body">
-                <div class="talk-title">Closing remarks & Candle Lighting</div>
-                <div class="talk-meta">TBD</div>
-              </div>
-            </div>
+          <h1>Accepted Posters</h1>
+          <p class="subtitle">ISCOL 2025 • December 18th, 2025</p>
 
-            <div class="talk talk-poster">
-              <div class="talk-time">16:40 - 17:40</div>
-              <div class="talk-body">
-                <div class="talk-title">Posters Session 3 + Sufganiyot</div>
-              </div>
-            </div>
-            
-            
+          <!-- Mobile Session Tabs -->
+          <div class="session-tabs">
+            <button class="session-tab active" data-session="1">Session 1<br><span class="tab-time">10:15 - 11:15</span></button>
+            <button class="session-tab" data-session="2">Session 2<br><span class="tab-time">13:45 - 14:45</span></button>
+            <button class="session-tab" data-session="3">Session 3<br><span class="tab-time">16:40 - 17:40</span></button>
           </div>
+
+          <div class="sessions-grid">
+'''
+
+    # Generate sections for each poster session
+    for session_id in sorted(posters_by_session.keys()):
+        posters = posters_by_session[session_id]
+        time = session_times[session_id]
+        
+        html += f'''
+            <div class="session-column" data-session-content="{session_id}">
+              <div class="session-header">
+                <h2 id="session-{session_id}">Session {session_id} <span class="session-time">({time})</span></h2>
+              </div>
+              <div class="posters-list">
+'''
+        
+        for poster in posters:
+            # Escape HTML in title and authors
+            title = poster['title'].replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+            authors = poster['authors'].replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+            
+            html += f'''            <div class="poster-item">
+              <div class="poster-title">{title}</div>
+              <div class="poster-authors">{authors}</div>
+            </div>
+'''
+        
+        html += '''              </div>
+            </div>
+'''
+
+    html += '''          </div>
         </div>
       </section>
     </main>
@@ -181,6 +159,29 @@
     </button>
 
     <script>
+      // Session tabs for mobile
+      const sessionTabs = document.querySelectorAll('.session-tab');
+      const sessionColumns = document.querySelectorAll('.session-column');
+      
+      // Initialize first session as active on page load
+      if (sessionColumns.length > 0) {
+        sessionColumns[0].classList.add('active');
+      }
+      
+      sessionTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          const sessionId = tab.dataset.session;
+          
+          // Remove active class from all tabs and columns
+          sessionTabs.forEach(t => t.classList.remove('active'));
+          sessionColumns.forEach(c => c.classList.remove('active'));
+          
+          // Add active class to clicked tab and corresponding column
+          tab.classList.add('active');
+          document.querySelector(`[data-session-content="${sessionId}"]`).classList.add('active');
+        });
+      });
+      
       // Mobile navigation toggle
       const toggle = document.querySelector('.nav-toggle');
       const menu = document.getElementById('nav-menu');
@@ -236,3 +237,32 @@
     </script>
   </body>
 </html>
+'''
+    
+    return html
+
+def main():
+    """Main function to generate posters.html."""
+    script_dir = Path(__file__).parent
+    csv_path = script_dir / 'assets' / 'posters.csv'
+    output_path = script_dir / 'posters.html'
+    
+    print(f"Loading posters from {csv_path}...")
+    posters_by_session = load_posters(csv_path)
+    
+    # Print statistics
+    for session_id in sorted(posters_by_session.keys()):
+        count = len(posters_by_session[session_id])
+        print(f"  Session {session_id}: {count} posters")
+    
+    print(f"\nGenerating HTML...")
+    html = generate_html(posters_by_session)
+    
+    print(f"Writing to {output_path}...")
+    with open(output_path, 'w', encoding='utf-8') as f:
+        f.write(html)
+    
+    print(f"✓ Successfully generated {output_path}")
+
+if __name__ == '__main__':
+    main()

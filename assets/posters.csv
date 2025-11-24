@@ -1,0 +1,132 @@
+title,Authors,Poster Session ID
+"Readability Formulas, Systems and LLMs are Poor Predictors of Reading Ease",Keren Gruteke Klein; Shachar Frenkel; Omer Shubi; Yevgeni Berzak,3
+LCHAIM - Investigating Long Context Reasoning in Hebrew,Ehud Malul; Oriel Perets; Ziv Mor; Yigal Kassel; Elior Sulem,1
+NER Retriever: Zero-Shot Named Entity Retrieval with Type-Aware Embeddings,Or Shachar; Uri Katz; Yoav Goldberg; Oren Glickman,1
+The Mighty ToRR: A Benchmark for Table Reasoning and Robustness in LLMs,Shir Ashury-Tahan; Yifan Mai; Rajmohan C; Ariel Gera; Yotam Perlitz; Asaf Yehudai; Elron Bandel; Leshem Choshen; Eyal Shnarch; Percy Liang; Michal Shmueli-Scheuer,1
+Using Natural Language Inference and Inferentialist Theory to Assess Meaning Similarity in Text Generation,Reto Gubelmann; Christina Niklaus; Thomas Huber,1
+Not Just a Piece of Cake: Cross-Lingual Fine-Tuning for Idiom Identification,Ofri Hefetz; Kai Golan Hashiloni; Kfir Bar,1
+3DLLM-Mem: Long-Term Spatial-Temporal Memory for Embodied 3D Large Language Model,"Yonatan Bitton, Wenbo Hu, Yining Hong, Yanjun Wang, Leison Gao, Zibu Wei, Xingcheng Yao, Nanyun Peng, Idan Szpektor, Kai-Wei Chang",1
+Aligning What LLMs Do and Say: Towards Self-Consistent Explanations,Sahar Admoni; Ofra Amir; Assaf Hallak; Yftah Ziser,1
+ErrorMap and ErrorAtlas: Charting the Failure Landscape of Large Language Models,Shir Ashury-Tahan; Yifan Mai; Elron Bandel; Michal Shmueli-Scheuer; Leshem Choshen,1
+Breaking ReAct Agents: Foot-in-the-Door Attack Will Get You In,Itay Nakash; George Kour; Guy Uziel; Ateret Anaby Tavor,1
+Comparing human and language models sentence processing difficulties on complex structures,Samuel Joseph Amouyal; Aya Meltzer-Asscher; Jonathan Berant,1
+PromptSuite: A Task-Agnostic Framework for Multi-Prompt Generation,Eliya Habba; Noam Dahan; Gili Lior; Gabriel Stanovsky,3
+Uncovering Measurement Biases in LLM Embedding Spaces: The Anna Karenina Principle and Its Implications for Automated Feedback,Abigail Gurin Schleifer; Beata Beigman Klebanov; Giora Alexandron,1
+Universal NER v2: Towards a Massively Multilingual Named Entity Recognition Benchmark,Hila Gonen; Shachar Mirkin; Yuval Pinter,1
+User-Centric Evidence Ranking for Attribution and Fact Verification,Guy Alt; Eran Hirsch; Serwar Basch; Ido Dagan; Oren Glickman,1
+Are LLMs Better than Reported? Detecting Label Errors and Mitigating Their Effect on Model Performance,Omer Nahum; Nitay Calderon; Orgad Keller; Idan Szpektor; Roi Reichart,1
+"Planted in Pretraining, Swayed by Finetuning: A Case Study on the Origins of Cognitive Biases in LLMs",Itay Itzhak; Yonatan Belinkov; Gabriel Stanovsky,1
+Probing Subphonemes in Morphology Models,Gal Astrach; Yuval Pinter,1
+CLEAR: Error Analysis via LLM-as-a-Judge Made Easy,Asaf Yehudai; Lilach Eden; Yotam Perlitz; Roy Bar-Haim; Michal Shmueli-Scheuer,1
+Not Your Typical Sycophant: Evaluating Sycophancy of Large Language Models,Oren Tsur; Shahar Ben Natan,1
+JuStRank: Benchmarking LLM Judges for System Ranking,Ariel Gera; Odellia Boni; Yotam Perlitz; Roy Bar-Haim; Lilach Eden; Asaf Yehudai,1
+Automatic biblical authorship attribution,Shira Faigenbaum-Golovin; Alon Kipnis; Axel Bühler; Eliezer Piasetzky; Thomas Römer; Israel Finkelstein,1
+A Survey on Evaluation of LLM-based Agents,Asaf Yehudai; Lilach Eden; Alan Li; Guy Uziel; Yilun Zhao; Roy Bar-Haim; Arman Cohan; Michal Shmueli-Scheuer,1
+Detecting (Un)answerability in Large Language Models with Linear Directions,Maor Juliet Lavi; Tova Milo; Mor Geva,1
+Don’t lie to your friends: Learning what you know from collaborative self-play,Jonathan Berant; Reza Aghajani; Jacob Eisenstein; Adam Fisch; Dheeru Dua; Fantine Eri Huot; Mirella Lapata; Vicky Zayats,1
+REVS: Unlearning Sensitive Information in Language Models via Rank Editing in the Vocabulary Space,Tomer Ashuach; Martin Tutek; Yonatan Belinkov,1
+Effective Red-Teaming of Policy-Adherent Agents,Itay Nakash; George Kour; Koren Lazar; Matan Vetzler; Guy Uziel; Ateret Anaby Tavor,1
+Integrating Morphological Structure into Word Embedding Representations,Dror Mughaz,1
+Detecting Conspiracies in Hebrew Twitter with LLM-GNN Fusion,Lior Biton; Oren Tsur,1
+Localizing Factual Inconsistencies in Attributable Text Generation,Arie Cattan; Paul Roit; Shiyue Zhang; David Wan; Roee Aharoni; Idan Szpektor; Mohit Bansal; Ido Dagan,1
+MINT: Meaning Integrating Tokenizer,Ibraheem Abo Shakra; Yuval Pinter,1
+d-chi Stencil: A Differential Privacy Mechanism for Interacting with LLMs,Re'em Harel; Yuval Pinter; Niv Gilboa,1
+IQ Test for LLMs: An Evaluation Framework for Uncovering Core Skills in LLMs,Aviya Maimon,1
+CRISP: Persistent Concept Unlearning via Sparse Autoencoders,Tomer Ashuach; Dana Arad; Aaron Mueller; Martin Tutek; Yonatan Belinkov,1
+Grade: Quantifying sample diversity in text-to-image models,Royi Rassin; Aviv Slobodkin; Shauli Ravfogel; Yanai Elazar; Yoav Goldberg,1
+Decoding Reading Goals from Eye Movements,Omer Shubi; Cfir Avraham Hadar; Yevgeni Berzak,1
+The Distracting Effect: Understanding Irrelevant Passages in RAG,"Chen Amiraz, Florin Cuconasu, Simone Filice, Zohar Karnin",2
+Vocab Diet: Reshaping the Vocabulary of LLMs with Vector Arithmetic,Yuval Reif; Guy Kaplan; Roy Schwartz,1
+PrefixNLI: Detecting Factual Inconsistencies as Soon as They Arise,Sapir Harary; Eran Hirsch; Aviv Slobodkin; David Wan; Mohit Bansal; Ido Dagan,1
+Towards Reliable Proof Generation with LLMs: A Neuro-Symbolic Approach,Oren Sultan; Eitan Stern; Dafna Shahaf,1
+Large Temporal Models: Unlocking Temporal Understanding in LLMs for Temporal Relation Classification,Omri Homburger; Kfir Bar,1
+Unveiling the spectrum of Arabic offensive  language: Taxonomy and insights,Chaya Liebeskind; Yossef Haim Shrem; Marina Litvak; Natalia Vanetik,1
+LAQuer: Localized Attribution Queries in Content-grounded Generation,Eran Hirsch; Aviv Slobodkin; David Wan; Elias Stengel-Eskin; Mohit Bansal; Ido Dagan,1
+TwoHillsLab: A Scalable Platform for  Quantitative Analysis of Biblical Hebrew,Guy Shaked,1
+The Alternative Annotator Test for LLM-as-a-Judge: How to Statistically Justify Replacing Human Annotators with LLMs,Nitay Calderon; Roi Reichart; Rotem Dror,2
+Connections Between The Pre-Training Data To Model Representations,Omer Ben Shahar; Guy Kaplan; Roy Schwartz,2
+Debatable Intelligence: Benchmarking LLM Judges via Debate Speech Evaluation,Noy Sternlicht; Ariel Gera; Roy Bar-Haim; Tom Hope; Noam Slonim,2
+Accelerating LLM Inference with Lossless Speculative Decoding Algorithms for Heterogeneous Vocabularies,Nadav Timor; Jonathan Mamou; Daniel Korat; Moshe Berchansky; Gaurav Jain; Oren Pereg; Moshe Wasserblat; David Harel; Roy Schwartz,2
+Segment-Based Attention Masking for GPTs,Shahar Katz; Liran Ringel; Yaniv Romano; Lior Wolf,2
+Easy as PIE? Identifying Multi-Word Expressions with LLMs,Kai Golan Hashiloni; Ofri Hefetz; Kfir Bar,2
+Déjà Vu? Decoding Repeated Reading from Eye Movements,Yoav Meiri; Omer Shubi; Cfir Avraham Hadar; Ariel Kreisberg Nitzav; Yevgeni Berzak,2
+Multi-Domain Explainability of Preferences,Nitay Calderon; Liat Ein-Dor; Roi Reichart,2
+ManagerBench: Evaluating the Safety-Pragmatism Trade-off in Autonomous LLMs,Adi Simhi; Jonathan Herzig; Martin Tutek; Itay Itzhak; Idan Szpektor; Yonatan Belinkov,2
+From Tokens to Thoughts: How LLMs and Humans Trade Compression for Meaning,Chen Shani; Liron Soffer; Dan Jurafsky; Yann LeCun; Ravid Shwartz-Ziv,3
+Reverse-Engineering the Retrieval Process in GenIR Models,Anja Reusch; Yonatan Belinkov,2
+How Many Van Goghs Does It Take to Van Gogh? Finding the Imitation Threshold,Sahil Verma; Royi Rassin; Arnav Mohanty Das; Gantavya Bhatt; Preethi Seshadri; Chirag Shah; Jeff Bilmes; Hannaneh Hajishirzi; Yanai Elazar,2
+Estimating Scientific Quality on the Web: A Multilingual LLM Approach,Nir Grinberg; Or Meiri; Ayelet Baram-Tsabari,2
+Leveraging Digitized Newspapers to Collect Summarization Data in Low-Resource Languages,Noam Dahan; Omer Kidron; Gabriel Stanovsky,2
+QA-Noun: Representing Nominal Semantics via Natural Language Question-Answer Pairs,Maria Tseytlin; Paul Roit; Omri Abend; Ido Dagan; Ayal Klein,2
+TabSTAR: A Tabular Foundation Model for Tabular Data with Text Fields,Alan Arazi; Eilam Shapira; Roi Reichart,2
+Beyond N-Grams: Rethinking Evaluation Metrics and Strategies for Multilingual Abstractive Summarization,Itai Mondshine; Tzuf Paz-Argaman; Reut Tsarfaty,2
+Cross-lingual Extractive Question Answering with Unanswerable Questions,Yuval Gorodissky; Elior Sulem; Dan Roth,2
+How Much Pretraining Does Structured Data Need?,Daniel Fadlon; Kfir Bar,2
+CToT: Causal Tree of Thoughts for Inference-Time Compute,Zachary Elisha Bamberger; Till Raphael Saenger; Ofra Amir; Brandon M. Stewart; Amir Feder,2
+Don't Overthink it. Preferring Shorter Thinking Chains for Improved LLM Reasoning,Michael Hassid; Gabriel Synnaeve; Yossi Adi; Roy Schwartz,2
+LMEnt: A Suite for Analyzing Knowledge in Language Models from Pretraining Data to Representations,Daniela Gottesman; Mor Geva; Yoav Gur-Arieh; Ido Cohen; Ori Yoran; Marius Mosbach,2
+Do LLMs Understand Harmfulness?,Hadas Orgad; Boyi Wei; Kaden Zheng; Peter Henderson; Seraphina Goldfarb-Tarrant; Yonatan Belinkov,2
+Distilling Examples into Task Instructions: Enhanced In-Context Learning for Long B2B Conversations,Guy Rotman; Adi Kopilov; Danit Berger Zalmanson; Omri Allouche,2
+Can LLMs Help Encoder Models Maintain Both High Accuracy and Consistency in Temporal Relation Classification?,Adiel Meir; Kfir Bar,2
+Hyper-RAG,Bar Block; Yuval Pinter,2
+The Cross-Lingual Cost: Retrieval Biases in RAG over Arabic-English Corpora,"Chen Amiraz, Yaroslav Fyodorov, Elad Haramaty, Zohar Karnin, Liane Lewin-Eytan",2
+ArTyDi-QA: Question Answering and Question Generation in Arabic,Guy Mor-Lan; Abubakr Babiker; Reut Tsarfaty,3
+Will it Merge? Causes of Model Mergeability,Adir Rahamim; Asaf Yehudai; Boaz Carmeli; Leshem Choshen; Yosi Mass; Yonatan Belinkov,2
+AdaptiVocab: Enhancing LLM Efficiency in Focused Domains through Lightweight Vocabulary Adaptation,Itay Nakash; Nitay Calderon; Eyal Ben-David; Elad Hoffer; Roi Reichart,2
+Mixing Mechanisms: How Language Models Retrieve Bound Entities In-Context,Yoav Gur-Arieh; Mor Geva; Atticus Geiger,2
+Teaching Values to Machines: Simulating Human-Like Behavior in LLMs with Value-Prompting,Asaf Yehudai; Naama Rozen; Ariel Gera,2
+CHIMERA: A Knowledge Base of Idea Recombination in Scientific Literature,Noy Sternlicht; Tom Hope,2
+Beyond Word Boundaries: A Hebrew Coreference Benchmark for Morphologically Complex Text,Refael Shaked Greenfeld; Reut Tsarfaty,2
+Word Pyramid Puzzles as a Multi-lingually Diverse Reasoning Benchmark,Omer Noy; Reut Tsarfaty; Omer Goldman,2
+Building an Accurate Open-Source Hebrew ASR System through Crowdsourcing,Yanir Marmor; Yair Lifshitz; Yoad Snapir; Kinneret Misgav,2
+Consensus or Conflict? Fine-Grained Evaluation of Conflicting Answers in Question-Answering,Eviatar Nachshoni; Arie Cattan; Shmuel Amar; Ori Shapira; Ido Dagan,2
+"Factual Retrieval in LLMs Is a Redundant, Non-Contiguous Process",Hail Hochman; Natalie Shapira; Yoav Goldberg,2
+Pixels at BAREC Shared Task 2025: Visual Arabic Readability Assessment,Ben Sapirstein,2
+How Should We Evaluate LLM Reasoning Quality For Fact Verification?,Ron Eliav; Arie Cattan; Eran Hirsch; Shahaf Bassan; Elias Stengel-Eskin; Mohit Bansal; Ido Dagan,2
+"Fine-Grained Arabic Offensive Language Classification with Taxonomy, Sentiment, and Emotions",Natalia Vanetik; Marina Litvak; Chaya Liebeskind,2
+Differences in Input and Output Quality of LLMs Across Age Groups,Shira Darchi; Yuval Pinter,2
+Inferring Functionality of Attention Heads from their Parameters,Amit Elhelo; Mor Geva,2
+mini-vec2vec: Scaling Universal Geometry Alignment with Linear Transformations,Guy Dar,3
+GLEE: A Unified Framework and Benchmark for Language-based Economic Environments,Eilam Shapira; Omer Madmon; Itamar Reinman; Samuel Joseph Amouyal; Roi Reichart; Moshe Tennenholtz,3
+LiveRAG: A diverse Q&A dataset with varying difficulty level for RAG evaluation,"David Carmel, Simone Filice, Guy Horowitz, Yoelle Maarek, Alex Shtoff, Oren Somekh, Ran Tavory",3
+DRAGged into CONFLICTS: Detecting and Addressing Conflicting Sources in Search-Augmented LLMs,Arie Cattan; Alon Jacovi; Ori Ram; Jonathan Herzig; Roee Aharoni; Sasha Goldshtein; Eran Ofek; Idan Szpektor; Avi Caciularu,1
+A Holistic Approach towards Vocabulary Expansion for Language Adaptation,Orian Dabod; Amir David Nissan Cohen; Gabriel Stanovsky,3
+"Who are you, ChatGPT? Personality and Demographic Style in LLM-Generated Content",Dana Sotto Porat; Ella Rabinovich,3
+Fine-Grained Detection of Context-Grounded Hallucinations Using LLMs,Yehonatan Peisakhovsky; Zorik Gekhman; Roi Reichart; Yosi Mass; Liat Ein-Dor,3
+Effective QA-driven Annotation of Predicate-Argument Relations Across Languages,Jonathan Davidov; Aviv Slobodkin; Shmuel Tomi Klein; Reut Tsarfaty; Ido Dagan; Ayal Klein,3
+Towards Enforcing Company Policy Adherence in Agentic Workflows,Naama Zwerdling; David Boaz; Ella Rabinovich; Guy Uziel; David Amid; Ateret Anaby Tavor,3
+Out-of-Context Reasoning in Large Language Models,Jonathan Shaki; Emanuele La Malfa; Michael J. Wooldridge; Sarit Kraus,3
+SpeLLM: Character-Level Multi-Head Decoding,Amit Ben-Artzy; Roy Schwartz,3
+PaperFinder: a State-of-the-art LLM-based Scientific Search Agent,Yoav Goldberg; Dan Bareket; Aryeh Tiktinsky; Micah Shlain; Ben Eyal; Mark Polak; Menny Pinhasov; Sigal Rahamimov; Uri Katz; Guy Wiener,3
+Dementia Through Different Eyes: Explainable Modeling of Human and LLM Perceptions for Early Awareness,Lotem Peled-Cohen; Maya Zadok; Nitay Calderon; Hila Gonen; Roi Reichart,3
+Cooking Up Creativity: Enhancing LLM Creativity through Structured Recombination,Moran Mizrahi; Chen Shani; Gabriel Stanovsky; Dan Jurafsky; Dafna Shahaf,3
+Break Out the Silverware: Semantic Understanding of Stored Household Items,Michaela Levi Richter; Reuth Mirsky; Oren Glickman,2
+Beyond the Noise: Aligning Prompts with Latent Representations in Diffusion Models,"Vasco Ramos, Regev Cohen, Idan Szpektor, Joao Magalhaes",3
+Making LVLMs Look Twice: Contrastive Decoding with Contrast Images,Avshalom Manevich; Reut Tsarfaty,3
+"Keep Guessing? When Considering Inference Scaling, Mind the Baselines",Or Honovich; Gal Yona; Omer Levy; Roee Aharoni,3
+Letting the Data Speak: Automating Schema Discovery for Research,Eliya Habba; Renana Keydar; Gabriel Stanovsky,3
+The Enemy from Within: A Study of Political Delegitimization Discourse in Israeli Political Speech,Naama Rivlin-Angert; Guy Mor-Lan,3
+"More Documents, Same Length: Isolating the Challenge of Multiple Documents in RAG",Shahar Levy; Nir Mazor; Lihi Shalmon; Michael Hassid; Gabriel Stanovsky,3
+Where Did That Come From? Sentence-Level Error-Tolerant Attribution,Ori Ernst; Aviv Slobodkin; Meng Cao; Sihui Wei; Jackie CK Cheung,3
+Hexagen: Improving Abstraction Reasoning Through Code Execution,Amit Lisha; Reut Tsarfaty,3
+Enhancing Automated Interpretability with Output-Centric Feature Descriptions,Yoav Gur-Arieh; Roy Mayan; Chen Agassy; Atticus Geiger; Mor Geva,3
+Differential Mamba,Nadav Schneider; Itamar Zimerman; Eliya Nachmani,3
+Inside-Out: Hidden Factual Knowledge in LLMs,Zorik Gekhman; Eyal Ben-David; Hadas Orgad; Eran Ofek; Yonatan Belinkov; Idan Szpektor; Roi Reichart,3
+Precise In-Parameter Concept Erasure in Large Language Models,Yoav Gur-Arieh; Clara Haya Suslik; Yihuai Hong; Fazl Barez; Mor Geva,3
+SAEs Are Good for Steering - If You Select the Right Features,Dana Arad; Aaron Mueller; Yonatan Belinkov,3
+"Retrieve, Learn, Refine: An Interleaved Retrieval–Learning Agent for Exhaustive IR",Binyamin Cohen; Uri Katz; Yoav Goldberg,3
+Expectation management shifts the representation of unexpectedness,Benjamin Menashe; Michal Ben-Shachar,3
+Prompts in the Wild: A Large Analyzed Collection of Prompts in Code,Victoria Basmov; Yoav Goldberg; Reut Tsarfaty,3
+The ShareLM Collection and Plugin: Contributing Human-Model Chats for the Benefit of the Community,Shachar Don-Yehiya; Leshem Choshen; Omri Abend,3
+Learning a Continue-Thinking Token for Enhanced Test-Time Scaling,Liran Ringel; Elad Tolochinsky; Yaniv Romano,3
+Decomposing MLP Activations into Interpretable Features via Semi-Nonnegative Matrix Factorization,Or David Shafran; Atticus Geiger; Mor Geva,3
+Cross-Lingual and Cross-Cultural Variation in Image Descriptions,Uri Berger; Edoardo Ponti,3
+A Unifying Scheme for Extractive Content Selection Tasks,Shmuel Amar; Ori Shapira; Aviv Slobodkin; Ido Dagan,3
+"MRLEval: A Benchmark for LLM Evaluation in Hebrew, Modern Standard Arabic and Levantine Arabic",Guy Mor-Lan; Reut Tsarfaty,3
+DeLeaker: Dynamic Inference-Time Reweighting For Semantic Leakage Mitigation in Text-to-Image Models,Mor Ventura; Michael Toker; Or Patashnik; Yonatan Belinkov; Roi Reichart,3
+Beyond Pairwise: Global Zero-shot Temporal Graph Generation,Alon Eirew; Kfir Bar; Ido Dagan,1
+Time to Talk: LLM Agents for Asynchronous Group Communication in Mafia Games,Niv Eckhaus; Uri Berger; Gabriel Stanovsky,3
+ECLeKTic: a Novel Challenge Set for Evaluation of Cross-Lingual Knowledge Transfer,Omer Goldman; Uri Shaham; Dan Malkin; Sivan Eiger; Adi Mayrav Gilady; Idan Szpektor; Reut Tsarfaty; Matan Eyal,3
+ReliableEval: A Recipe for Stochastic LLM Evaluation via Method of Moments,Gili Lior; Eliya Habba; Shahar Levy; Avi Caciularu; Gabriel Stanovsky,3
+SastBench: A Benchmark for Testing Agentic SAST Triage,Jake Feiglin; Guy Dar,3
+Semi-synthetic parallel data for translation quality estimation: A case study of English–Hebrew,Assaf Siani; Ilan Kernerman; Anna Kernerman,3

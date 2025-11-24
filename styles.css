@@ -734,6 +734,227 @@ i.fab {
     max-width: 200px;
     max-height: 100px;
   }
+  
+  /* Mobile posters styling */
+  .session-tabs {
+    display: grid;
+    position: sticky;
+    top: 64px;
+    background: white;
+    z-index: 20;
+    padding: 12px 0;
+    margin: 0 -20px 20px -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .session-tab {
+    padding: 12px 6px;
+    font-size: 14px;
+  }
+  
+  .tab-time {
+    font-size: 11px;
+  }
+  
+  .sessions-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  
+  .session-column {
+    display: none;
+    margin-bottom: 0;
+  }
+  
+  .session-column.active {
+    display: block;
+  }
+  
+  .session-header {
+    display: none;
+  }
+  
+  .posters-list {
+    gap: 12px;
+    margin-top: 0;
+  }
+  
+  .poster-item {
+    padding: 16px;
+  }
+  
+  .poster-title {
+    font-size: 15px;
+    line-height: 1.4;
+    margin-bottom: 6px;
+  }
+  
+  .poster-authors {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  
+  .back-to-top {
+    bottom: 16px;
+    right: 16px;
+    width: 48px;
+    height: 48px;
+  }
+  
+  /* Compact footer for mobile */
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px 0;
+    font-size: 14px;
+  }
+  
+  .footer-links {
+    flex-wrap: wrap;
+    gap: 8px 12px;
+    font-size: 13px;
+  }
+}
+
+/* Tablet layout */
+@media (min-width: 721px) and (max-width: 1200px) {
+  .session-tabs {
+    display: none;
+  }
+  
+  .sessions-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  
+  .session-column {
+    display: block !important;
+  }
+  
+  .session-header {
+    display: block;
+    position: static;
+    top: auto;
+  }
+}
+
+/* Posters List Styling */
+.session-tabs {
+  display: none;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin: 24px 0;
+}
+
+.session-tab {
+  padding: 14px 8px;
+  background: white;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  color: #6b7280;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.session-tab:hover {
+  border-color: #3b82f6;
+  color: #3b82f6;
+}
+
+.session-tab.active {
+  background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+  border-color: #3b82f6;
+  color: #1e40af;
+}
+
+.tab-time {
+  font-size: 12px;
+  font-weight: 500;
+  color: inherit;
+  opacity: 0.8;
+}
+
+.sessions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.session-column {
+  display: flex;
+  flex-direction: column;
+  min-width: 0; /* Prevent overflow */
+}
+
+.session-header {
+  margin-bottom: 16px;
+  padding: 16px 20px;
+  border-radius: 10px;
+  position: sticky;
+  top: 64px;
+  background: linear-gradient(135deg, #e0f2fe 0%, #dbeafe 100%);
+  border: 1px solid rgba(37, 99, 235, 0.2);
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.15);
+  z-index: 10;
+}
+
+.session-header h2 {
+  margin: 0;
+  font-size: 22px;
+  color: #1e40af;
+}
+
+.session-time {
+  color: #3b82f6;
+  font-weight: 600;
+  font-size: 16px;
+  display: block;
+  margin-top: 4px;
+}
+
+.posters-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.poster-item {
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--card);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.poster-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.poster-title {
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 8px;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.poster-authors {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
 }
 
 
