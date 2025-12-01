@@ -572,11 +572,12 @@ i.fab {
 }
 
 /* Intel sponsor with blue background */
-.sponsor-item:nth-child(2) {
+
+.sponsor-item:nth-child(3) {
   background: #1D68B5;
 }
 
-.sponsor-item:nth-child(2):hover {
+.sponsor-item:nth-child(3):hover {
   background: #1D68B5;
   border-color: #ffffff;
 }
@@ -592,8 +593,14 @@ i.fab {
   border-color: #ffffff;
 }
 
+.sponsor-item:nth-child(2) .sponsor-logo img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
 /* IBM logo size adjustment */
-.sponsor-item:nth-child(3) .sponsor-logo img {
+
+.sponsor-item:nth-child(4) .sponsor-logo img {
   max-width: 100px;
   max-height: 100px;
 }
