@@ -90,12 +90,19 @@ a:focus {
 }
 
 .site-header {
-  position: sticky;
+  position: fixed; /* switch to fixed to pin to viewport reliably */
   top: 0;
-  z-index: 50;
-  background: rgba(255, 255, 255, 0.85);
+  left: 0;
+  right: 0;
+  z-index: 1000; /* raised so animated/transformed content cannot overlap the header */
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: saturate(180%) blur(10px);
   border-bottom: 1px solid var(--border);
+}
+
+/* Prevent header from covering page content */
+.site-header + main {
+  padding-top: 64px; /* matches .header-inner height */
 }
 
 .header-inner {
@@ -719,10 +726,19 @@ i.fab {
     box-shadow: 0 8px 24px rgba(0,0,0,0.12);
     min-width: 200px;
     animation: fadeInUp 0.2s ease;
+    z-index: 1001; /* ensure mobile dropdown sits above page content */
   }
   
   .nav-list.open { 
     display: flex; 
+    /* Use fixed positioning when open to avoid being clipped or overlapped
+       by other page content or stacking contexts while the user scrolls. */
+    position: fixed;
+    top: 64px;
+    right: 20px;
+    left: auto;
+    margin: 0;
+    z-index: 1001;
   }
   
   .nav-list li {
