@@ -112,7 +112,30 @@
               <div class="talk-time">11:15 - 12:15</div>
               <div class="talk-body">
                 <div class="talk-title">Keynote Talk | Prof. Dan Roth (University of Pennsylvania, Oracle)</div>
-                <div class="talk-meta">Title: TBD | Chair: Ido Dagan</div>
+                <div class="talk-subtitle">On Retrieving &amp; Reasoning LLMs: Myths, Merits, and How to Move Forward</div>
+                <div class="talk-meta">Chair: Ido Dagan</div>
+                <button class="abstract-btn" onclick="openAbstract('keynote-abstract')">Abstract</button>
+              </div>
+            </div>
+
+            <!-- Abstract Modal -->
+            <div id="keynote-abstract" class="abstract-modal">
+              <div class="abstract-content">
+                <span class="abstract-close" onclick="closeAbstract('keynote-abstract')">&times;</span>
+                <h3>Abstract</h3>
+                <p>The rapid progress made over the last few years in generating linguistically coherent
+natural language has blurred, in the mind of many, the difference between natural
+language generation, understanding, knowledge retrieval and use, and the ability to
+reason with respect to the world.</p>
+<p>Nevertheless, reliably and consistently supporting high-level decisions that depend on
+natural language understanding and heterogenous information retrieval is still difficult
+for fundamental reasons that range from computational complexity to data organization
+in the wild (and are here to stay).</p>
+<p>I will discuss some of the challenges underlying reasoning and information access,
+argue that we should exploit what LLMs do well while delegating responsibility to special
+purpose models and solvers for decision making, and present some of our work in this
+space. I hope to collectively acknowledge some of the key GenAI myths and their
+consequences, think about their underlying causes, and discuss ways to move forward.</p>
               </div>
             </div>
             
@@ -269,6 +292,44 @@
 
       // Initialize back to top button visibility
       toggleBackToTopButton();
+
+      // Abstract modal functions
+      function openAbstract(modalId) {
+        const modal = document.getElementById(modalId);
+        if (modal) {
+          modal.style.display = 'block';
+          document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
+        }
+      }
+
+      function closeAbstract(modalId) {
+        const modal = document.getElementById(modalId);
+        if (modal) {
+          modal.style.display = 'none';
+          document.body.style.overflow = 'auto'; // Restore scrolling
+        }
+      }
+
+      // Close modal when clicking outside the content
+      window.addEventListener('click', (event) => {
+        if (event.target.classList.contains('abstract-modal')) {
+          event.target.style.display = 'none';
+          document.body.style.overflow = 'auto';
+        }
+      });
+
+      // Close modal when pressing Escape key
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') {
+          const modals = document.querySelectorAll('.abstract-modal');
+          modals.forEach(modal => {
+            if (modal.style.display === 'block') {
+              modal.style.display = 'none';
+              document.body.style.overflow = 'auto';
+            }
+          });
+        }
+      });
     </script>
   </body>
 </html>

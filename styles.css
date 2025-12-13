@@ -1028,4 +1028,101 @@ i.fab {
   overflow-wrap: anywhere;
 }
 
+/* Abstract Button and Modal Styling */
+.abstract-btn {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: var(--brand);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(37, 99, 235, 0.2);
+}
+
+.abstract-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(37, 99, 235, 0.3);
+}
+
+.abstract-modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  animation: fadeIn 0.3s ease;
+}
+
+.abstract-content {
+  position: relative;
+  background-color: white;
+  margin: 5% auto;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 700px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  animation: fadeInUp 0.3s ease;
+}
+
+.abstract-content h3 {
+  margin-top: 0;
+  color: var(--brand);
+  font-size: 24px;
+  border-bottom: 2px solid var(--brand);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.abstract-content p {
+  line-height: 1.7;
+  color: var(--text);
+  margin-bottom: 16px;
+  text-align: justify;
+}
+
+.abstract-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  color: var(--muted);
+  font-size: 32px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.abstract-close:hover {
+  color: var(--text);
+  background: var(--bg-alt);
+}
+
+@media (max-width: 720px) {
+  .abstract-content {
+    margin: 10% 20px;
+    padding: 24px;
+    max-width: calc(100% - 40px);
+  }
+
+  .abstract-btn {
+    font-size: 13px;
+    padding: 7px 14px;
+  }
+}
+
 
